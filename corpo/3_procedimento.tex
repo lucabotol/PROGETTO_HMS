@@ -39,6 +39,15 @@ F_{x_i} = 1- \left[ 1+\xi\left(\frac{x_i - s}{\psi}\right)\right]^{-\frac{1}{\xi
 
 \noindent Il vantaggio di questo metodo, rispetto a quello che considera solamente i singoli massimi annui (Gumbel), è che il campione risultante considera anche gli eventi di entità minori.
 
+\subsection{Analisi preliminare di elaborazione dati}
+Per poter estrarre l'altezza critica di precipitazione, data una serie pluviometrica, è necessario svolgere alcune procedure preliminari sulla popolazione:
+\begin{itemize}
+    \item ordinare in ordine decrescente i valori di precipitazione;
+    \item fissare una soglia inferiore di riferimento;
+    \item eliminare i valori di precipitazione minori, nel caso ce ne fossero alcuni dipendenti da altri;
+    \item procedere con l'elaborazione statistica.
+\end{itemize}
+
 \subsection{Plotting position}
 Mediante la plotting position è possibile verificare la bontà della distribuzione dei valori.\\
 Ad ogni valore della serie, posta in ordine crescente, viene attribuito un valore dipendente alla sua posizione numerica, tramite la formula:
@@ -60,3 +69,4 @@ La traiettoria della linea segue l'andamento della funzione $h=at^n$, dove:
 \item $a$ dipende dal tempo di ritorno;    
 \item $n$ è un valore compreso tra 0 e 1, ed è praticamente costante per una data stazione.
 \end{itemize}
+
