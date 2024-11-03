@@ -718,3 +718,39 @@
 \begin{figure}[H]\centering
     \includegraphics[scale=0.75]{immagini/distr_prob_1440min.png}
 \end{figure}
+
+\subsection{Altezze critiche e LSPP}
+
+Successivamente ad aver valutato la bontà di accoppiamento degli eventi pluviometrici, è possibile calcolare l'altezza critica, dato un certo tempo di ritorno (215 anni per questo studio), mediante la formula \ref{h_critica_tr}.
+
+\begin{table}[H] \centering
+    \caption{\textcolor{red}{Altezze critiche di precipitazione, suddivise per durata di precipitazione.}}
+            \begin{tabular}{ccc}
+            \toprule
+            Tempo di prec. [min] & Tempo di prec. [ore] & Altezza di pioggia [mm] \\
+            \midrule
+            15                       & 0.25                     & 29.91                       \\
+            30                       & 0.5                      & 47.04                       \\
+            45                       & 0.75                     & 54.49                       \\
+            60                       & 1                        & 75.33                       \\
+            120                      & 2                        & 77.28                       \\
+            180                      & 3                        & 78.97                       \\
+            360                      & 6                        & 147.66                      \\
+            720                      & 12                       & 221.59                      \\
+            1440                     & 24                       & 369.78                     \\
+            \bottomrule
+            \end{tabular}
+\end{table}
+
+\noindent Da questi dati è possibile creare un grafico che indichi l'andamento pluviometrico in funzione della durata dell'evento stesso.
+
+\begin{figure}[H]\centering
+    \includegraphics[scale=0.75]{immagini/LSPP_215.png}
+    \caption{LSPP per un tempo di ritorno di 215 anni, con assi a scala lineare.}
+\end{figure}
+
+\begin{figure}[H]\centering
+    \includegraphics[scale=0.75]{immagini/LSPP_log_215.png}
+    \caption{LSPP per un tempo di ritorno di 215 anni, con assi a scala logaritmica.}
+\end{figure}
+

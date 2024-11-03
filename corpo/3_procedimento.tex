@@ -66,13 +66,16 @@ Infine, per effettuare la valutazione visiva della bontà di accoppiamento, è n
 Dopo aver processato i dati del campione statistico ed aver valutato la bontà di accoppiamento con la serie teorica, è possibile calcolare la relativa altezza critica di precipitazione (dato un certo tempo di ritorno), mediante la formula:
 \begin{equation}
     h_{T_R} = s + \frac{\psi}{\xi} \left[ \left(\frac{1}{\lambda \cdot T_R} \right) ^{-\xi} - 1 \right]
+    \label{h_critica_tr}
 \end{equation}
 
 \subsection{LSPP}
 La Linea Segnalatrice di Possibilità Pluviometrica è una funzione che mette in relazione la durata di un certo evento pluviometrico e l'altezza di pioggia prevista, per un dato tempo di ritorno.\\
 Quindi, è possibile, svolgendo i calcoli per diversi tempi di ritorno, avere diverse LSPP per una stessa stazione di rilevamento (o per uno stesso sito).\\
+Al fine di semplificare la lettura del grafico, ed eventualmente l'estrapolazione del dato di pioggia, è possibile imporre che gli assi cartesiani abbiano la scala logaritmica; in questo modo, la linea curva interpolatrice dei punti diventa una retta.\\
 La traiettoria della linea segue l'andamento della funzione $h=at^n$, dove:
 \begin{itemize}
+\item $t$ è il parametro della durata dell'evento (espresso in ore);
 \item $a$ dipende dal tempo di ritorno;    
 \item $n$ è un valore compreso tra 0 e 1, ed è praticamente costante per una data stazione.
 \end{itemize}
