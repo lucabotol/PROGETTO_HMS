@@ -35,7 +35,63 @@ Dopo aver svolto il processo di calibrazione, è possibile introdurre i parametr
 \end{figure}
 
 \begin{figure}[H]\centering
+    \includegraphics[scale=1]{immagini/par_ottimiz_boite.PNG}
+    \caption{Parametri ottimizzati del bacino del Boite, riferito all'evento della tempesta Vaia.}
+        \label{par_ottim_boite}    
+    \end{figure}
+
+\begin{figure}[H]\centering
     \includegraphics[scale=1]{immagini/ottim_piave.PNG}
     \caption{Grafico afflussi-deflussi ottimizzato del bacino del Piave, riferito all'evento della tempesta Vaia.}
         \label{ottim_piave}    
+\end{figure}
+
+\begin{figure}[H]\centering
+    \includegraphics[scale=1]{immagini/par_ottimiz_piave.PNG}
+    \caption{Parametri ottimizzati del bacino del Piave, riferito all'evento della tempesta Vaia.}
+        \label{par_ottim_boite}    
+    \end{figure}
+
+Successivamente ad aver ricavato questi parametri ottimizzati, si procede a riportarli nella finestra del relativo bacino, in modo da correggere le successive simulazioni.\\
+E' doveroso far presente che, i dati di CN e del Lag Time del bacino del Piave hanno dei valori insoliti, perché all'interno di esso sono presenti degli invasi, che vanno a modificare l'arrivo alla sezione di chiusura dell'acqua. Molto probabilmente, un territorio del genere, con ampie foreste di conifere e prati, può avere come valore medio un CN di 35-40.
+
+\subsection{Applicazione del modello idrologico al proprio tempo di ritorno}
+Avendo effettuato la calibrazione del modello idrologico, è possibile ripetere la medesima operazione svolta precedentemente e calcolare il volume di deflusso, data la propria precipitazione con un certo tempo di ritorno (215 anni per questa relazione).\\
+In questo caso si andrà a creare un nuovo modello meteorologico, cercando però di simulare una precipitazione di durata simile a quella del tempo di corrivazione, in modo da massimizzare in tutti e due i casi i picchi.\\
+Per questo motivo, e per quanto calcolato al capitolo sul tempo di corrivazione, si opta per imporre una durata di 12 ore al bacino del Boite e di 24 ore al bacino del Piave.
+
+\begin{figure}[H]\centering
+    \includegraphics[scale=1]{immagini/boite_215.PNG}
+    \caption{Grafico afflussi-deflussi del bacino del Boite, riferito ad un tempo di ritorno pluviometrico di 215 anni.}
+        \label{boite_215}    
+\end{figure}
+
+\begin{figure}[H]\centering
+    \includegraphics[scale=1]{immagini/risul_boite_215.PNG}
+    \caption{Risultati dello studio dei deflussi del bacino del Boite, dato un certo tempo di ritorno.}
+        \label{risul_boite_215}    
+    \end{figure}
+
+    \begin{figure}[H]\centering
+        \includegraphics[scale=1]{immagini/sub1_piave_215.PNG}
+        \caption{Grafico afflussi-deflussi del sottobacino 1 del Piave, riferito ad un tempo di ritorno pluviometrico di 215 anni.}
+            \label{sub1_piave_215}    
+    \end{figure}    
+
+\begin{figure}[H]\centering
+        \includegraphics[scale=1]{immagini/sub2_piave_215.PNG}
+        \caption{Grafico afflussi-deflussi del sottobacino 2 del Piave, riferito ad un tempo di ritorno pluviometrico di 215 anni.}
+            \label{sub2_piave_215}    
+\end{figure}
+    
+\begin{figure}[H]\centering
+        \includegraphics[scale=1]{immagini/sub3_piave_215.PNG}
+        \caption{Grafico afflussi-deflussi del sottobacino 2 del Piave, riferito ad un tempo di ritorno pluviometrico di 215 anni.}
+            \label{sub3_piave_215}    
+\end{figure}    
+
+    \begin{figure}[H]\centering
+\includegraphics[scale=1]{immagini/risul_piave_215.PNG}
+\caption{Risultati dello studio dei deflussi del bacino del Piave, dato un certo tempo di ritorno.}
+\label{risul_piave_215}    
 \end{figure}
