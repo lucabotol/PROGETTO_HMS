@@ -80,3 +80,13 @@ La traiettoria della linea segue l'andamento della funzione $h=at^n$, dove:
 \item $n$ è un valore compreso tra 0 e 1, ed è praticamente costante per una data stazione.
 \end{itemize}
 
+\subsection{Calcolo del tempo di corrivazione}
+Il tempo di corrivazione $t_c$ di un bacino è il periodo necessario affinché una qualsiasi massa d'acqua percorra lo spazio tra la sezione di chiusura ed il punto più idraulicamente distante ad essa.\\
+Questo tempo può anche essere visto come il periodo di pioggia necessario affinché ogni area del bacino sia contribuente al deflusso alla sezione di chiusura.\\
+Questo parametro è molto importante in idrologia, perché alla durata di precipitazione uguale a quella di corrivazione avviene il massimo deflusso. Se la precipitazione avesse un tempo inferiore, non tutto il bacino sarebbe contribuente al medesimo istante; se la durata di pioggia fosse superiore a quella di corrivazione, l'intensità sarebbe minore.\\
+Esistono diverse formule per calcolare il $t_c$ di un bacino, in questa relazione ho scelto di usare quella di Ferro (del 2002):
+\begin{equation}
+    T_c = 0.675 \cdot \sqrt{A}
+\end{equation}
+Nella formula occorre introdurre il valore di estensione in kilometri quadri, al fine di ottenere il tempo in ore.\\
+Svolgendo la formula, si ottiene che il tempo di corrivazione per il bacino del Boite è pari a 13.21 h, e quello del Piave è pari a 19.24 h.
