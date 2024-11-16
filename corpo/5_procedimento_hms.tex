@@ -69,8 +69,9 @@ E' doveroso far presente che i dati di CN e del Lag Time del bacino del Piave ha
 \subsection{Applicazione del modello idrologico al proprio tempo di ritorno}
 Avendo effettuato la calibrazione del modello idrologico, è possibile ripetere la medesima operazione svolta precedentemente e calcolare il volume di deflusso, data la propria precipitazione con un certo tempo di ritorno (215 anni per questa relazione).\\
 Questi grafici di deflusso prendono anche il nome di \textit{idrogrammi di piena sintetici}.\\
-In questo caso si andrà a creare un nuovo modello meteorologico, cercando però di simulare una precipitazione di durata simile a quella del tempo di corrivazione, in modo da massimizzare in tutti e due i casi i picchi.\\
-Per questo motivo, e per quanto calcolato al capitolo sul tempo di corrivazione, si opta per imporre una durata di 12 ore al bacino del Boite e di 24 ore al bacino del Piave.
+In questo caso, si andrà a creare un nuovo modello meteorologico, cercando però di simulare una precipitazione di durata simile a quella del tempo di corrivazione, in modo da massimizzare per tutti e due i casi i picchi.\\
+Precipitazioni di durata inferiore al tempo di corrivazione del bacino non permettono il simultaneo deflusso di tutti i sottobacini; d'altra parte, durate di pioggia superiori al tempo di risposta del bacino possiedono intensità inferiori.\\
+Per questi motivi, e per quanto calcolato al capitolo sul tempo di corrivazione, si opta per imporre una durata di 12 ore al bacino del Boite e di 24 ore al bacino del Piave.
 
 \begin{figure}[H]\centering
     \includegraphics[scale=0.9]{immagini/boite_215.PNG}
@@ -116,6 +117,8 @@ Per questo motivo, e per quanto calcolato al capitolo sul tempo di corrivazione,
 
 \subsection{Analisi dei risultati ottenuti}
 Dopo aver svolto i calcoli per ricavare il deflusso dei bacini, è possibile compiere alcuni ragionamenti.\\
-Il bacino del Boite è interessato da una precipitazione che è di durata minore e più simile al tempo di corrivazione, rispetto a quella che si verifica nel bacino del Piave.\\
+Il bacino del Boite è interessato da una precipitazione che è di durata minore e più simile al tempo di corrivazione rispetto a quella che si verifica nel bacino del Piave.\\
 Entrambe queste caratteristiche fanno in modo che il picco di deflusso del bacino del Boite risulti molto maggiore a quello del Piave (com'è possibile verificare nelle immagini \ref{risul_boite_215} e \ref{risul_piave_215}).\\
-Come anticipato precedentemente, i valori del CN del bacino del Piave sono eccessivamente ridotti rispetto a quelli reali, poiché all'interno di esso sono presenti dei bacini di immagazzinamento che fanno variare la curva di deflusso.
+Come anticipato precedentemente, i valori del CN del bacino del Piave sono eccessivamente ridotti rispetto a quelli reali, poiché all'interno di esso sono presenti dei bacini di immagazzinamento che fanno variare la curva di deflusso.\\
+Per questo, i bassi valori di CN del bacino del Piave fanno aumentare il volume di storage idrico del terreno, e di conseguenza anche le perdite iniziali; ne consegue che, il terreno ha una minore tendenza a generare deflusso superficiale, ma al contrario ad infiltrare acqua.\\
+Queste caratteristiche possono essere dimostrate analizzando le differenze di volumi idrici defluiti alle sezioni di chiusura: una precipitazione nel bacino del Piave di doppia durata rispetto a quella del Boite genera un runoff di volume inferiore alla metà di quest'ultimo (come osservabile nelle figure \ref{risul_boite_215} e \ref{risul_piave_215}).
