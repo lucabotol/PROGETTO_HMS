@@ -49,7 +49,8 @@ Dopo aver svolto il processo di calibrazione, è possibile introdurre i parametr
         \label{par_ottim_boite}    
     \end{figure}
 
-In questo caso, l'algoritmo di ottimizzazione del software ritiene che i valori di CN pari a 33 e di lag time pari a 242 minuti siano quelli che meglio approssimano la curva di deflusso simulata del Boite rispetto a quella osservata.
+In questo caso, l'algoritmo di ottimizzazione del software ritiene che i valori di CN pari a 33 e di lag time pari a 242 minuti siano quelli che meglio approssimano la curva di deflusso simulata del Boite rispetto a quella osservata.\\
+Il parametro di Nash Sutcliffe, descritto precedentemente, è pari a 0.932
 
 \begin{figure}[H]\centering
     \includegraphics[scale=1]{immagini/ottim_piave.PNG}
@@ -63,6 +64,7 @@ In questo caso, l'algoritmo di ottimizzazione del software ritiene che i valori 
         \label{par_ottim_boite}    
     \end{figure}
 
+Nel caso dell'ottimizzazione svolta per il bacino del Piave, basata sull'evento Vaia, il parametro di Nash Sutcliffe è pari a 0.973.\\
 Successivamente ad aver ricavato i parametri ottimizzati, ed averli introdotti nella finestra dei relativi bacini, si è sicuri che le successive simulazioni (qualsiasi esse siano) si baseranno su valori il più possibile coerenti con le caratteristiche reali.\\
 E' doveroso far presente che i dati di CN e del Lag Time del bacino del Piave hanno dei valori insoliti, perché all'interno di esso sono presenti degli invasi, che vanno a modificare l'arrivo alla sezione di chiusura dell'acqua. Molto probabilmente, un territorio del genere, con ampie foreste di conifere e prati, possiede un valore medio un di CN che si attesta intorno ai 35-40.
 
@@ -119,7 +121,7 @@ Per questi motivi, e per quanto calcolato al capitolo sul tempo di corrivazione,
 Dopo aver svolto i calcoli per ricavare il deflusso dei bacini, è possibile compiere alcuni ragionamenti.\\
 Il bacino del Boite è interessato da una precipitazione che è di durata minore e più simile al tempo di corrivazione rispetto a quella che si verifica nel bacino del Piave.\\
 Entrambe queste caratteristiche fanno in modo che il picco di deflusso del bacino del Boite risulti molto maggiore a quello del Piave (com'è possibile verificare nelle immagini \ref{risul_boite_215} e \ref{risul_piave_215}).\\
-Come anticipato precedentemente, i valori del CN del bacino del Piave sono eccessivamente ridotti rispetto a quelli reali, poiché all'interno di esso sono presenti dei bacini di immagazzinamento che fanno variare la curva di deflusso.\\
-Per questo, i bassi valori di CN del bacino del Piave fanno aumentare il volume di storage idrico del terreno, e di conseguenza anche le perdite iniziali; ne consegue che, il terreno ha una minore tendenza a generare deflusso superficiale, ma al contrario ad infiltrare acqua.\\
+Come anticipato precedentemente, i valori del CN del bacino del Piave sono eccessivamente ridotti rispetto a quelli reali, poiché all'interno di esso sono presenti dei bacini di immagazzinamento che fanno variare la curva di deflusso, come per esempio laghi naturali o artificiali (dighe). Conoscendo la dinamica di rilascio di acqua dai bacini, sarebbe possibile migliorare il modello idraulico, rendendolo più simile alla realtà.\\
+I bassi valori di CN del bacino del Piave fanno aumentare il volume di storage idrico del terreno, e di conseguenza anche le perdite iniziali; ne consegue che, il terreno ha una minore tendenza a generare deflusso superficiale, ma al contrario ad infiltrare acqua.\\
 Queste caratteristiche possono essere dimostrate analizzando le differenze di volumi idrici defluiti alle sezioni di chiusura: una precipitazione nel bacino del Piave di doppia durata rispetto a quella del Boite genera un runoff di volume inferiore alla metà di quest'ultimo (come osservabile nelle figure \ref{risul_boite_215} e \ref{risul_piave_215}).\\
 Nel caso in cui si volesse implementare maggiormente il modello idrologico, si dovrebbe prendere in considerazione anche altri parametri ambientali, come per esempio quelli radiativi del sole o quelli vegetativi degli alberi, entrambi non disponibili per queste simulazioni.
